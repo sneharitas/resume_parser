@@ -1,0 +1,8 @@
+nav{display:flex;justify-content:space-between;align-items:center;padding:10px 20px;background:#111;color:#fff}
+ul{display:flex;gap:20px;list-style:none}
+#toggle{display:none;cursor:pointer}
+@media(max-width:768px){
+  ul{display:none;flex-direction:column}
+  ul.show{display:flex}
+  #toggle{display:block}
+}

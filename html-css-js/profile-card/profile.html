@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <head>
+    <style>
+        .card {
+            width: 200px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .card img {
+            border-radius: 50%;
+        }
+        .card h2 {
+            margin: 10px 0 5px;
+        }
+        .card p {
+            color: #777;
+            margin: 0 0 15px;
+        }
+        #followBtn {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #followBtn:hover {
+            background-color: #0056b3;
+        }
+        </style>
+
+</head>
+<body>
+    <div class="card">
+  <img src="https://avatars.githubusercontent.com/u/4088699?v=4&size=64" alt="profile">
+  <h2>Jagriti Srivastava</h2>
+  <p>Full Stack Engineer </p>
+  <button id="followBtn">Follow</button>
+</div>
+</body>
+<script>
+    const followBtn = document.getElementById('followBtn');
+    followBtn.addEventListener('click', () => {
+        if (followBtn.textContent === 'Follow') {
+            followBtn.textContent = 'Unfollow';
+            followBtn.style.backgroundColor = '#dc3545';
+        } else {
+            followBtn.textContent = 'Follow';
+            followBtn.style.backgroundColor = '#007BFF';
+        }
+    });  
+    </script>
+</html>
